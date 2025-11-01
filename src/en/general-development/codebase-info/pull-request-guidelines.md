@@ -10,11 +10,11 @@ Thank you for contributing to Space Station 14. When submitting pull requests (P
 
 - Large new features and comprehensive reworks to existing large features (ie antags or anything that could be considered a subdepartment unto itself), should first be [proposed and accepted in abstract](../feature-proposals.md) before you start working on actually implementing it.
 
-- Read the [Freezes and Restrictions issue](https://github.com/space-wizards/space-station-14/issues/8524) and make sure your PR does not interfere with anything or requires special requirements.
+- Read the [Freezes and Restrictions issue](https://github.com/space-wizards/space-station-14/issues/8524) and make sure your PR does not interfere with anything or require special requirements.
   
-- If you are fixing a bug that is present on the live servers, or addressing an urgent balance issue on the live servers, consider if your change should be a hotfix.
-  - Hotfixes must target the stable branch, so for these you have to fork your working branch from stable, not master.
-  - You will still be able to open your PR on the master branch, even if you fork from stable but change your mind later.
+- If you are fixing a bug that is present on the live servers or addressing an urgent balance issue on the live servers, consider whether your change should be a hotfix.
+  - Hotfixes must target the stable branch, so for these, you have to fork your working branch from stable, not master.
+  - You will still be able to open your PR on the master branch, even if you fork from stable, but change your mind later.
   - Such a working branch, however, will not show any unreleased changes that have been merged into the game since the last release. You will not see if your code interferes or conflicts with those changes. This may become a problem, should the target of your PR be changed to the master branch. For this reason, content or feature changes should be based on the master branch.
 
 ## Content
@@ -27,11 +27,11 @@ Thank you for contributing to Space Station 14. When submitting pull requests (P
     - If you move a file to a different folder and/or namespace, put that in its own commit when possible to make it easier to tell what got changed in a file and what was just moved.
     - Mapping changes should be given a separate PR for each map changed. This includes even minor changes. 
 
-- **Do not make multiple unrelated changes in one PR.** For example, do not make miscellaneous additional changes to a PR, e.g. changing the heat resistance of a pair of gloves alongside your PR adding a new gun.
+- **Do not make multiple unrelated changes in one PR.** For example, do not make miscellaneous additional changes to a PR, e.g., changing the heat resistance of a pair of gloves alongside your PR, or adding a new gun.
 
     - Try to split your PR into smaller ones where it makes sense to do so. This makes it significantly easier to read and can lead to faster reviews. It's also usually easier for you, and means you will receive earlier feedback and can avoid spending time making changes that have to be reworked.
  
-- **Start each PR with a short summary of what your PR does in simple terms, and if it's a gameplay PR link to design documents if applicable.** Being able to quickly see what your PR intends to do and how it relates to established design documents makes for faster triages and reviews. When submitting a small change, or when there is no existing design document that is applicable, the design may instead be outlined directly in the PR description.
+- **Start each PR with a short summary of what your PR does in simple terms, and if it's a gameplay PR, link to design documents if applicable.** Being able to quickly see what your PR intends to do and how it relates to established design documents makes for faster triages and reviews. When submitting a small change or when there is no existing design document that is applicable, the design may instead be outlined directly in the PR description.
 
 ## Testing
 
@@ -47,7 +47,7 @@ Thank you for contributing to Space Station 14. When submitting pull requests (P
     - Hotfixes do not wait for the next bi-weekly release after being merged.
     - Bugs that impact the live server or urgent balance changes can be considered a hotfix.
     - Only changes **based on the stable branch** can become a hotfix.
-    - When you open a PR on github, you can select which branch it will target, and the master branch is always selected by default. For a hotfix you must select the stable branch manually.
+    - When you open a PR on GitHub, you can select which branch it will target, and the master branch is always selected by default. For a hotfix, you must select the stable branch manually.
     - If you are uncertain if your change should be a hotfix, open it targeting the master branch. Then, ask on the PR if it can be made a hotfix.
 
 - Decide if you are opening the PR as a **draft**.
@@ -58,7 +58,7 @@ Thank you for contributing to Space Station 14. When submitting pull requests (P
 - **Review your diff** using the code preview tab on GitHub.
 
     - Check for changes that you did not intend to commit.
-    - Check for accidental whitespace additions or line end changes.
+    - Check for accidental whitespace additions or line-end changes.
 
 ## After Submitting
 
@@ -74,7 +74,7 @@ We appreciate and consider all player feedback. However, maintainers ultimately 
 
 ## Getting Reviews
 
-- Anyone is welcome to review PRs. Reviews from other contributors can be just as valuable as reviews from maintainers, and often mean that PRs can be merged faster and can help relieve the workload for maintainers. If you are waiting for a review it might be a good idea to find another contributor in a similar position so that you can mutually review each other's PRs. Reading other people's PRs and thinking critically about how you would have written the code can also be a useful learning tool. 
+- Anyone is welcome to review PRs. Reviews from other contributors can be just as valuable as reviews from maintainers, and often mean that PRs can be merged faster and can help relieve the workload for maintainers. If you are waiting for a review, it might be a good idea to find another contributor in a similar position so that you can mutually review each other's PRs. Reading other people's PRs and thinking critically about how you would have written the code can also be a useful learning tool. 
 
 - Maintainers periodically review open PRs.
 
@@ -90,7 +90,7 @@ We appreciate and consider all player feedback. However, maintainers ultimately 
 Changelog entries help make players aware of new features or changes to existing features.
 
 ## Changelog Template
-The Github PR template contains the following changelog that you can use to format your changelog entry so that it is automatically updated in-game:
+The GitHub PR template contains the following changelog that you can use to format your changelog entry so that it is automatically updated in-game:
 
 ```
 :cl:
@@ -100,7 +100,7 @@ The Github PR template contains the following changelog that you can use to form
 - fix: Fixed fun!
 ```
 
-By default, changes are credited to your Github username. If you would like your name to appear differently in-game, add a string on the same line as the `:cl:` with the name that you would like to use.
+By default, changes are credited to your GitHub username. If you would like your name to appear differently in-game, add a string on the same line as the `:cl:` with the name that you would like to use.
 
 Each entry is either an `add`, `remove`, `tweak`, or `fix`. There can be multiple entries in each category. These set the change log icon and do not show up in the change log text.
 
@@ -197,7 +197,7 @@ The Changelog is for *players* to be aware of new features and changes that coul
 
 When writing your changelog entries, please follow these guidelines:
 
-1. **Log entries should be complete, grammatically-correct sentences.** They should begin with a capital letter and end in a period.
+1. **Log entries should be complete, grammatically correct sentences.** They should begin with a capital letter and end in a period.
   
    - Not so good: "fixed reflected projectiles dealing stamina damage" This sentence does not begin with a capital letter, does not end with a period.
    
